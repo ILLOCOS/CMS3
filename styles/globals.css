@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@import url("https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text");
+
+:root {
+  --max-width: 700px;
+  --border-radius: 12px;
+  --font: "Poppins", sans-serif;
+  --font-color: rgb(10, 239, 29);
+  --box-shadow: rgba(229, 240, 27, 0.2) 0px 7px 29px 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+
+body {
+  width: min(var(--max-width), 100%);
+  height: 100vh;
+  margin: auto;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+ul {
+  list-style: none;
+}
+
